@@ -7,10 +7,11 @@ import java.io.IOException;
 
 import javax.imageio.ImageIO;
 
+import com.hanyanjiao.tank.ResourceMgr;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-import com.mashibing.tank.ResourceMgr;
+import com.hanyanjiao.tank.ResourceMgr;
 
 class ImageRotateTest {
 

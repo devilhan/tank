@@ -4,15 +4,11 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import java.util.UUID;
 
+import com.hanyanjiao.tank.Dir;
+import com.hanyanjiao.tank.net.*;
 import org.junit.jupiter.api.Test;
 
-import com.mashibing.tank.Dir;
-import com.mashibing.tank.net.Msg;
-import com.mashibing.tank.net.MsgDecoder;
-import com.mashibing.tank.net.MsgEncoder;
-import com.mashibing.tank.net.MsgType;
-import com.mashibing.tank.net.TankDirChangedMsg;
-import com.mashibing.tank.net.TankDirChangedMsg;
+
 
 import io.netty.buffer.ByteBuf;
 import io.netty.buffer.Unpooled;
