@@ -12,7 +12,7 @@ import java.awt.event.WindowEvent;
  */
 public class TankFrame extends Frame {
 
-    int x = 200,y=200;
+    Tank tank = new Tank(200,200,Dir.DOWN);
 
     public TankFrame(){
         //´°¿ÚÀà
@@ -62,6 +62,7 @@ public class TankFrame extends Frame {
                 default:
                     break;
             }
+            setMainTankDir();
         }
 
         @Override
@@ -86,16 +87,24 @@ public class TankFrame extends Frame {
                 default:
                     break;
             }
+
+            setMainTankDir();
+        }
+
+        private void setMainTankDir() {
+            if (bL) dir = Dir.LEFT;
+            if (bD) dir = Dir.DOWN;
+            if (bR) dir = Dir.RIGHT;
+            if (bU) dir = Dir.UP;
         }
     }
 
     @Override
     public void paint(Graphics g) {
         System.out.println("paint");
-        g.fillRect(x,y,50,50);
-//        g.fill3DRect(30,30,10,10,false);
-//        x += 10;
-//        y += 10;
+        tank.paint(g);
+
+
 
     }
 }
