@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0d84a190-4d77-4270-b176-447402ae8568" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/tank.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/tank.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tank/src/com/devil/tank/Bullet.java" beforeDir="false" afterPath="$PROJECT_DIR$/tank/src/com/devil/tank/Bullet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tank/src/com/devil/tank/Tank.java" beforeDir="false" afterPath="$PROJECT_DIR$/tank/src/com/devil/tank/Tank.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tank/src/com/devil/tank/TankFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/tank/src/com/devil/tank/TankFrame.java" afterDir="false" />
     </list>
@@ -30,8 +29,8 @@
       <file leaf-file-name="Bullet.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tank/src/com/devil/tank/Bullet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-22">
-              <caret line="17" column="30" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
+            <state relative-caret-position="770">
+              <caret line="35" column="30" lean-forward="true" selection-start-line="35" selection-start-column="30" selection-end-line="35" selection-end-column="30" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="docComment;class#Bullet#0" expanded="true" />
@@ -40,11 +39,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TankFrame.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="TankFrame.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tank/src/com/devil/tank/TankFrame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="191">
-              <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+            <state relative-caret-position="148">
+              <caret line="144" column="36" lean-forward="true" selection-start-line="144" selection-start-column="36" selection-end-line="144" selection-end-column="36" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#555#744#0" expanded="true" />
@@ -54,16 +53,16 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Tank.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Tank.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/tank/src/com/devil/tank/Tank.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="924">
-              <caret line="51" column="23" lean-forward="true" selection-start-line="51" selection-start-column="23" selection-end-line="51" selection-end-column="23" />
+            <state relative-caret-position="192">
+              <caret line="60" column="26" selection-start-line="60" selection-start-column="26" selection-end-line="60" selection-end-column="26" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="docComment;class#Tank#0" expanded="true" />
                 <element signature="e#1182#1183#0" expanded="true" />
-                <element signature="e#1247#1248#0" expanded="true" />
+                <element signature="e#1250#1251#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -136,8 +135,8 @@
         <option value="$PROJECT_DIR$/tank/src/com/devil/tank/Dir.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/tank/src/com/devil/tank/Bullet.java" />
-        <option value="$PROJECT_DIR$/tank/src/com/devil/tank/Tank.java" />
         <option value="$PROJECT_DIR$/tank/src/com/devil/tank/TankFrame.java" />
+        <option value="$PROJECT_DIR$/tank/src/com/devil/tank/Tank.java" />
       </list>
     </option>
   </component>
@@ -175,8 +174,8 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="196" />
-    <option name="y" value="206" />
+    <option name="x" value="-14" />
+    <option name="y" value="49" />
     <option name="width" value="1054" />
     <option name="height" value="840" />
   </component>
@@ -324,16 +323,15 @@
       <option name="presentableId" value="Default" />
       <updated>1600668597498</updated>
       <workItem from="1600668599552" duration="13578000" />
-      <workItem from="1600739394224" duration="7783000" />
+      <workItem from="1600739394224" duration="10582000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21361000" />
+    <option name="totallyTimeSpent" value="24160000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="196" y="206" width="1054" height="840" extended-state="0" />
-    <editor active="true" />
+    <frame x="-14" y="49" width="1054" height="840" extended-state="0" />
     <layout>
       <window_info anchor="right" id="PlantUML" order="3" />
       <window_info anchor="right" id="Palette" order="3" />
@@ -347,8 +345,8 @@
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="right" id="leetcode" order="3" side_tool="true" weight="0.19884963" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3308715" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.3293944" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3308715" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.3293944" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25075528" />
@@ -403,7 +401,7 @@
             <element signature="imports" expanded="true" />
             <element signature="docComment;class#Tank#0" expanded="true" />
             <element signature="e#1182#1183#0" expanded="true" />
-            <element signature="e#1247#1248#0" expanded="true" />
+            <element signature="e#1250#1251#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -682,17 +680,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tank/src/com/devil/tank/Bullet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-22">
-          <caret line="17" column="30" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="docComment;class#Bullet#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tank/src/com/devil/tank/Test.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="286">
@@ -700,27 +687,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tank/src/com/devil/tank/Tank.java">
+    <entry file="file://$PROJECT_DIR$/tank/src/com/devil/tank/Bullet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="924">
-          <caret line="51" column="23" lean-forward="true" selection-start-line="51" selection-start-column="23" selection-end-line="51" selection-end-column="23" />
+        <state relative-caret-position="770">
+          <caret line="35" column="30" lean-forward="true" selection-start-line="35" selection-start-column="30" selection-end-line="35" selection-end-column="30" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="docComment;class#Tank#0" expanded="true" />
-            <element signature="e#1182#1183#0" expanded="true" />
-            <element signature="e#1247#1248#0" expanded="true" />
+            <element signature="docComment;class#Bullet#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tank/src/com/devil/tank/TankFrame.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
-          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+        <state relative-caret-position="148">
+          <caret line="144" column="36" lean-forward="true" selection-start-line="144" selection-start-column="36" selection-end-line="144" selection-end-column="36" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#555#744#0" expanded="true" />
             <element signature="e#743#744#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tank/src/com/devil/tank/Tank.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="60" column="26" selection-start-line="60" selection-start-column="26" selection-end-line="60" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="docComment;class#Tank#0" expanded="true" />
+            <element signature="e#1182#1183#0" expanded="true" />
+            <element signature="e#1250#1251#0" expanded="true" />
           </folding>
         </state>
       </provider>
