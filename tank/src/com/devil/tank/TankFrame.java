@@ -1,5 +1,6 @@
 package com.devil.tank;
 
+
 import java.awt.*;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
@@ -12,14 +13,20 @@ import java.awt.event.WindowEvent;
  */
 public class TankFrame extends Frame {
 
-    Tank tank = new Tank(200,200,Dir.DOWN);
+    Tank tank = new Tank(200,200,Dir.DOWN,this);
+
+    Bullet bullet = new Bullet(300,300,Dir.DOWN);
+
+    static final int GAME_WIDTH = 800,GAME_HEIGHT = 600;
 
     public TankFrame(){
         //窗口类
-        setSize(800,600); //设置窗口大小
+        setSize(GAME_WIDTH,GAME_HEIGHT); //设置窗口大小
         setResizable(false);     //是否可调节大小
         setTitle("tank war");   //标题栏
         setVisible(true);       //窗口是否可见
+
+        addKeyListener(new MyKeyListener());  //添加键盘监听器
 
         //匿名内部类
         addWindowListener(new WindowAdapter() {   //添加窗口监控器
@@ -30,7 +37,22 @@ public class TankFrame extends Frame {
             }
         });
 
-        addKeyListener(new MyKeyListener());
+    }
+
+    Image offScreenImage = null;
+
+    @Override
+    public void update(Graphics g) {
+        if (offScreenImage == null){
+            offScreenImage = this.createImage(GAME_WIDTH,GAME_HEIGHT);
+        }
+        Graphics gOffScreen = offScreenImage.getGraphics();
+        Color c = gOffScreen.getColor();
+        gOffScreen.setColor(Color.black);
+        gOffScreen.fillRect(0,0,GAME_WIDTH,GAME_HEIGHT);
+        gOffScreen.setColor(c);
+        paint(gOffScreen);
+        g.drawImage(offScreenImage,0,0,null);
     }
 
     class MyKeyListener extends KeyAdapter{
@@ -58,6 +80,9 @@ public class TankFrame extends Frame {
                     break;
                 case KeyEvent.VK_DOWN:
                     bD = true;
+                    break;
+                case KeyEvent.VK_CONTROL:
+                    tank.fire();
                     break;
                 default:
                     break;
@@ -92,19 +117,22 @@ public class TankFrame extends Frame {
         }
 
         private void setMainTankDir() {
-            if (bL) dir = Dir.LEFT;
-            if (bD) dir = Dir.DOWN;
-            if (bR) dir = Dir.RIGHT;
-            if (bU) dir = Dir.UP;
+            if (!bL && !bR && !bD && !bU) tank.setMoving(false);
+            else {
+                tank.setMoving(true);
+                if (bL) tank.setDir(Dir.LEFT);
+                if (bD) tank.setDir(Dir.DOWN);
+                if (bR) tank.setDir(Dir.RIGHT);
+                if (bU) tank.setDir(Dir.UP);
+            }
+
         }
     }
 
     @Override
     public void paint(Graphics g) {
-        System.out.println("paint");
+//        System.out.println("paint");
         tank.paint(g);
-
-
-
+        bullet.paint(g);
     }
 }

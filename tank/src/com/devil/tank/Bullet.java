@@ -6,39 +6,32 @@ import java.awt.*;
 
 /**
  * @author Hanyanjiao
- * @date 2020/9/21
+ * @date 2020/9/22
  */
 @Data
-public class Tank {
+public class Bullet {
+    private static final int SPEED = 10;
+
+    private static final int HEIGHT = 20,WIDTH = 20;
 
     private int x,y;
     private Dir dir = Dir.DOWN;
-    private static final int SPEED = 5;
 
-    private TankFrame frame = null;
-
-    private boolean moving = false;
-
-    public Tank(int x, int y, Dir dir,TankFrame frame) {
+    public Bullet(int x, int y, Dir dir) {
         this.x = x;
         this.y = y;
         this.dir = dir;
-        this.frame = frame;
     }
 
-    public void paint(Graphics g) {
+    public void paint(Graphics g){
         Color c = g.getColor();
-        g.setColor(Color.yellow);
-        g.fillRect(x,y,50,50);
+        g.setColor(Color.red);
+        g.fillOval(x,y,WIDTH,HEIGHT);
         g.setColor(c);
         move();
-//        g.fill3DRect(30,30,10,10,false);
-//        x += 10;
-//        y += 10;
     }
 
-    private void move() {
-        if (!moving) return;
+    public void move(){
         switch (dir){
             case LEFT:
                 x -= SPEED;
@@ -55,9 +48,5 @@ public class Tank {
             default:
                 break;
         }
-    }
-
-    public void fire() {
-        frame.bullet = new Bullet(this.x,this.y,this.dir);
     }
 }
