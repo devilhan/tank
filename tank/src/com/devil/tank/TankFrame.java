@@ -17,6 +17,8 @@ public class TankFrame extends Frame {
 
     Tank tank = new Tank(200,200,Dir.DOWN,this);
 
+    List<Tank> enemy = new ArrayList<>();
+
     List<Bullet> bullets = new ArrayList<>();
 
 //    Bullet bullet = new Bullet(300,300,Dir.DOWN);
@@ -144,6 +146,11 @@ public class TankFrame extends Frame {
         for (int i=0;i<bullets.size();i++){
             bullets.get(i).paint(g);
         }
+
+        /*for (Iterator<Bullet> it = bullets.iterator();it.hasNext();){
+            Bullet b = it.next();
+            if (!b.live) it.remove();
+        }*/
 //        bullet.paint(g);
     }
 }

@@ -16,7 +16,7 @@ class ImageTest {
 	void test() {
 		
 		try {
-			BufferedImage image = ImageIO.read(new File("C:/work/javaprojects/Tank_60/src/images/bulletD.gif"));
+			BufferedImage image = ImageIO.read(new File("C:/workspace/tank/tank/src/images/bulletD.gif"));
 			assertNotNull(image);
 			
 			BufferedImage image2 = ImageIO.read(ImageTest.class.getClassLoader().getResourceAsStream("images/bulletD.gif"));

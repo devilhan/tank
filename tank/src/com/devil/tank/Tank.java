@@ -27,10 +27,29 @@ public class Tank {
     }
 
     public void paint(Graphics g) {
-        Color c = g.getColor();
+        //²âÊÔ£¬·½¿é±íÊ¾Ì¹¿Ë
+        /*Color c = g.getColor();
         g.setColor(Color.yellow);
         g.fillRect(x,y,50,50);
-        g.setColor(c);
+        g.setColor(c);*/
+
+        switch (dir){
+            case RIGHT:
+                g.drawImage(ResourceMgr.TANKR,x,y,null);  //Ì¹¿ËÍ¼Æ¬
+                break;
+            case DOWN:
+                g.drawImage(ResourceMgr.TANKD,x,y,null);  //Ì¹¿ËÍ¼Æ¬
+                break;
+            case UP:
+                g.drawImage(ResourceMgr.TANKU,x,y,null);  //Ì¹¿ËÍ¼Æ¬
+                break;
+            case LEFT:
+                g.drawImage(ResourceMgr.TANKL,x,y,null);  //Ì¹¿ËÍ¼Æ¬
+                break;
+            default:
+                break;
+        }
+
         move();
 //        g.fill3DRect(30,30,10,10,false);
 //        x += 10;
@@ -40,11 +59,11 @@ public class Tank {
     private void move() {
         if (!moving) return;
         switch (dir){
-            case LEFT:
-                x -= SPEED;
-                break;
             case UP:
                 y -= SPEED;
+                break;
+            case LEFT:
+                x -= SPEED;
                 break;
             case DOWN:
                 y += SPEED;
