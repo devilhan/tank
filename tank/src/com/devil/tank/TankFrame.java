@@ -15,11 +15,13 @@ import java.util.List;
  */
 public class TankFrame extends Frame {
 
-    Tank tank = new Tank(200,200,Dir.DOWN,this);
+    Tank tank = new Tank(300,400,Dir.UP,Group.GOOD,this);
 
-    List<Tank> enemy = new ArrayList<>();
+    List<Tank> enemies = new ArrayList<>();
 
     List<Bullet> bullets = new ArrayList<>();
+
+    Explode explode = new Explode(100,100,this);
 
 //    Bullet bullet = new Bullet(300,300,Dir.DOWN);
 
@@ -73,7 +75,6 @@ public class TankFrame extends Frame {
             int key = e.getKeyCode();
 //            x+=10;
 //            repaint();
-            System.out.println("key pressed "+key);
             switch (key){
                 case KeyEvent.VK_LEFT:
                     bL = true;
@@ -101,7 +102,6 @@ public class TankFrame extends Frame {
             int key = e.getKeyCode();
 //            x+=10;
 //            repaint();
-            System.out.println("key pressed "+key);
             switch (key){
                 case KeyEvent.VK_LEFT:
                     bL = false;
@@ -140,6 +140,7 @@ public class TankFrame extends Frame {
         Color c = g.getColor();
         g.setColor(Color.white);
         g.drawString("子弹的数量："+bullets.size(),10,60);
+        g.drawString("敌人的数量："+enemies.size(),10,90);
         g.setColor(c);
 //        System.out.println("paint");
         tank.paint(g);
@@ -147,6 +148,17 @@ public class TankFrame extends Frame {
             bullets.get(i).paint(g);
         }
 
+        for (int i=0;i<enemies.size();i++){
+            enemies.get(i).paint(g);
+        }
+
+        for (int i=0;i<bullets.size();i++){
+            for (int j =0 ;j<enemies.size();j++){
+                bullets.get(i).collideWith(enemies.get(j));
+            }
+        }
+
+        explode.paint(g);
         /*for (Iterator<Bullet> it = bullets.iterator();it.hasNext();){
             Bullet b = it.next();
             if (!b.live) it.remove();

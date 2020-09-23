@@ -3,6 +3,7 @@ package com.devil.tank;
 import lombok.Data;
 
 import java.awt.*;
+import java.util.Random;
 
 /**
  * @author Hanyanjiao
@@ -15,22 +16,30 @@ public class Tank {
     private Dir dir = Dir.DOWN;
     private static final int SPEED = 5;
 
+    private Random random = new Random();
+
     private TankFrame frame = null;
 
-    private boolean moving = false;
+    private boolean moving = true;
+
+    private boolean living = true;
+
+    private Group group = Group.BAD;
 
     public static final int WIDTH = ResourceMgr.TANKD.getWidth();
 
     public static final int HEIGHT = ResourceMgr.TANKD.getHeight();
 
-    public Tank(int x, int y, Dir dir,TankFrame frame) {
+    public Tank(int x, int y, Dir dir,Group group,TankFrame frame) {
         this.x = x;
         this.y = y;
         this.dir = dir;
+        this.group = group;
         this.frame = frame;
     }
 
     public void paint(Graphics g) {
+        if (!living) frame.enemies.remove(this);
         //测试，方块表示坦克
         /*Color c = g.getColor();
         g.setColor(Color.yellow);
@@ -78,6 +87,8 @@ public class Tank {
             default:
                 break;
         }
+//        randomDir();
+        if (random.nextInt(10)>8 ) this.fire();
     }
 
     public void fire() {
@@ -102,6 +113,10 @@ public class Tank {
             default:
                 break;
         }
-        frame.bullets.add(new Bullet(bx,by,this.dir,frame));
+        frame.bullets.add(new Bullet(bx,by,this.dir,this.group,frame));
+    }
+
+    public void die() {
+        this.living = false;
     }
 }

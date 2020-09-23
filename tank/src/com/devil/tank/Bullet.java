@@ -18,19 +18,22 @@ public class Bullet {
     private int x,y;
     private Dir dir = Dir.DOWN;
 
-    private boolean live = true;
+    private Group group = Group.BAD;
+
+    private boolean living = true;
 
     TankFrame frame = null;
 
-    public Bullet(int x, int y, Dir dir,TankFrame frame) {
+    public Bullet(int x, int y, Dir dir,Group group,TankFrame frame) {
         this.x = x;
         this.y = y;
         this.dir = dir;
+        this.group = group;
         this.frame = frame;
     }
 
     public void paint(Graphics g){
-        if (!live){
+        if (!living){
             frame.bullets.remove(this);
         }
         switch (dir){
@@ -78,6 +81,27 @@ public class Bullet {
         }
 
         if (x<0 || y<0 || x> TankFrame.GAME_WIDTH || y>TankFrame.GAME_HEIGHT)
-            live = false;
+            living = false;
+    }
+
+    public void collideWith(Tank tank) {
+        if (this.group == tank.getGroup()) return;
+
+        //TODO 用一个rect 来记录子弹的位置
+
+        //子弹本身的矩形
+        Rectangle rect = new Rectangle(this.x,this.y,WIDTH,HEIGHT);
+
+        //坦克矩形
+        Rectangle rect2 = new Rectangle(tank.getX(),tank.getY(),tank.WIDTH,tank.HEIGHT);
+
+        if (rect.intersects(rect2)){
+            tank.die();
+            this.die();
+        }
+    }
+
+    private void die() {
+        this.living = false;
     }
 }
