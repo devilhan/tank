@@ -14,7 +14,7 @@ public class Tank {
 
     private int x,y;
     private Dir dir = Dir.DOWN;
-    private static final int SPEED = 5;
+    private static final int SPEED = 2;
 
     private Random random = new Random();
 
@@ -88,7 +88,13 @@ public class Tank {
                 break;
         }
 //        randomDir();
-        if (random.nextInt(10)>8 ) this.fire();
+        if (this.group == Group.BAD && random.nextInt(100)>95 ) this.fire();
+        if (this.group == Group.BAD && random.nextInt(100)>95)
+            randomDir();
+    }
+
+    private void randomDir() {
+        this.dir = Dir.values()[random.nextInt(4)];
     }
 
     public void fire() {

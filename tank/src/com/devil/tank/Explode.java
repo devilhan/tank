@@ -26,11 +26,14 @@ public class Explode {
         this.x = x;
         this.y = y;
         this.frame = frame;
+
+        new Audio("audio/explode.wav").play();
     }
 
     public void paint(Graphics g){
+
         g.drawImage(ResourceMgr.explodes[step++],x,y,null);
-        if (step>= ResourceMgr.explodes.length) step = 0;
+        if (step>= ResourceMgr.explodes.length) frame.explodes.remove(this);
     }
 
 }

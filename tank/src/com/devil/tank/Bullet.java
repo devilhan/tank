@@ -96,6 +96,7 @@ public class Bullet {
         Rectangle rect2 = new Rectangle(tank.getX(),tank.getY(),tank.WIDTH,tank.HEIGHT);
 
         if (rect.intersects(rect2)){
+            frame.explodes.add(new Explode((int)rect.getX(),(int)rect.getY(),frame));
             tank.die();
             this.die();
         }
