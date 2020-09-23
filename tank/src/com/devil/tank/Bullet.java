@@ -10,7 +10,7 @@ import java.awt.*;
  */
 @Data
 public class Bullet {
-    private static final int SPEED = 10;
+    private static final int SPEED = PropertyMgr.get("bulletSpeed");
 
     public static final int HEIGHT = ResourceMgr.BULLETD.getHeight();
     public static final int WIDTH = ResourceMgr.BULLETD.getWidth() ;

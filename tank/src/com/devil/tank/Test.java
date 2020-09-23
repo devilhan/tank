@@ -12,7 +12,7 @@ public class Test {
     public static void main(String[] args) throws InterruptedException {
        TankFrame t = new TankFrame();
 
-       int initTankCount = Integer.parseInt((String) PropertyMgr.get("initTankCount"));
+       int initTankCount = PropertyMgr.get("initTankCount");
 
         Random random = new Random();
 
