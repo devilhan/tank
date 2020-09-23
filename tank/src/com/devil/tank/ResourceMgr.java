@@ -11,7 +11,9 @@ import java.io.IOException;
  * 管理资源，将图片load到缓存中
  */
 public class ResourceMgr {
-    public static BufferedImage TANKD ,TANKR,TANKL,TANKU;
+    public static BufferedImage GOOD_TANKD ,GOOD_TANKR,GOOD_TANKL,GOOD_TANKU;
+
+    public static BufferedImage BAD_TANKD ,BAD_TANKR,BAD_TANKL,BAD_TANKU;
 
     public static BufferedImage BULLETL,BULLETD,BULLETR,BULLETU;
 
@@ -28,10 +30,15 @@ public class ResourceMgr {
             BULLETR = ImageIO.read(ResourceMgr.class.getClassLoader().getResourceAsStream("images/bulletR.gif"));
             BULLETU = ImageIO.read(ResourceMgr.class.getClassLoader().getResourceAsStream("images/bulletU.gif"));*/
 
-            TANKU = ImageIO.read(ResourceMgr.class.getClassLoader().getResourceAsStream("images/GoodTank1.png"));
-            TANKL = ImageUtil.rotateImage(TANKU,-90);
-            TANKD = ImageUtil.rotateImage(TANKU,180);
-            TANKR = ImageUtil.rotateImage(TANKU,90);
+            GOOD_TANKU = ImageIO.read(ResourceMgr.class.getClassLoader().getResourceAsStream("images/GoodTank1.png"));
+            GOOD_TANKL = ImageUtil.rotateImage(GOOD_TANKU,-90);
+            GOOD_TANKD = ImageUtil.rotateImage(GOOD_TANKU,180);
+            GOOD_TANKR = ImageUtil.rotateImage(GOOD_TANKU,90);
+
+            BAD_TANKU = ImageIO.read(ResourceMgr.class.getClassLoader().getResourceAsStream("images/BadTank1.png"));
+            BAD_TANKL = ImageUtil.rotateImage(BAD_TANKU,-90);
+            BAD_TANKD = ImageUtil.rotateImage(BAD_TANKU,180);
+            BAD_TANKR = ImageUtil.rotateImage(BAD_TANKU,90);
 
             BULLETU = ImageIO.read(ResourceMgr.class.getClassLoader().getResourceAsStream("images/bulletU.gif"));
             BULLETR = ImageUtil.rotateImage(BULLETU,90);

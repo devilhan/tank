@@ -26,9 +26,11 @@ public class Tank {
 
     private Group group = Group.BAD;
 
-    public static final int WIDTH = ResourceMgr.TANKD.getWidth();
+    Rectangle rect = new Rectangle();
 
-    public static final int HEIGHT = ResourceMgr.TANKD.getHeight();
+    public static final int WIDTH = ResourceMgr.GOOD_TANKU.getWidth();
+
+    public static final int HEIGHT = ResourceMgr.GOOD_TANKU.getHeight();
 
     public Tank(int x, int y, Dir dir,Group group,TankFrame frame) {
         this.x = x;
@@ -36,6 +38,11 @@ public class Tank {
         this.dir = dir;
         this.group = group;
         this.frame = frame;
+
+        rect.x = this.x;
+        rect.y = this.y;
+        rect.width = WIDTH;
+        rect.height = HEIGHT;
     }
 
     public void paint(Graphics g) {
@@ -48,16 +55,16 @@ public class Tank {
 
         switch (dir){
             case RIGHT:
-                g.drawImage(ResourceMgr.TANKR,x,y,null);  //Ì¹¿ËÍ¼Æ¬
+                g.drawImage(this.group == Group.GOOD ? ResourceMgr.GOOD_TANKR:ResourceMgr.BAD_TANKR,x,y,null);  //Ì¹¿ËÍ¼Æ¬
                 break;
             case DOWN:
-                g.drawImage(ResourceMgr.TANKD,x,y,null);  //Ì¹¿ËÍ¼Æ¬
+                g.drawImage(this.group == Group.GOOD ? ResourceMgr.GOOD_TANKD :ResourceMgr.BAD_TANKD,x,y,null);  //Ì¹¿ËÍ¼Æ¬
                 break;
             case UP:
-                g.drawImage(ResourceMgr.TANKU,x,y,null);  //Ì¹¿ËÍ¼Æ¬
+                g.drawImage(this.group == Group.GOOD ? ResourceMgr.GOOD_TANKU: ResourceMgr.BAD_TANKU,x,y,null);  //Ì¹¿ËÍ¼Æ¬
                 break;
             case LEFT:
-                g.drawImage(ResourceMgr.TANKL,x,y,null);  //Ì¹¿ËÍ¼Æ¬
+                g.drawImage(this.group == Group.GOOD ? ResourceMgr.GOOD_TANKL : ResourceMgr.BAD_TANKL,x,y,null);  //Ì¹¿ËÍ¼Æ¬
                 break;
             default:
                 break;
@@ -87,12 +94,24 @@ public class Tank {
             default:
                 break;
         }
+
 //        randomDir();
         if (this.group == Group.BAD && random.nextInt(100)>95 ) this.fire();
         if (this.group == Group.BAD && random.nextInt(100)>95)
             randomDir();
+
+        boundCheck();
+
+        rect.x = this.x;
+        rect.y = this.y;
     }
 
+    private void boundCheck() {
+        if (this.x<2 ) x = 2;
+        if (this.y<28)  y = 28;
+        if (this.x > TankFrame.GAME_WIDTH - Tank.WIDTH-2) x = TankFrame.GAME_WIDTH - Tank.WIDTH-2;
+        if (this.y > TankFrame.GAME_HEIGHT - Tank.HEIGHT-2) y = TankFrame.GAME_HEIGHT-Tank.HEIGHT-2;
+    }
     private void randomDir() {
         this.dir = Dir.values()[random.nextInt(4)];
     }
