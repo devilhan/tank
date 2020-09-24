@@ -1,6 +1,5 @@
 package com.devil.tank;
 
-
 import java.awt.*;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
@@ -92,6 +91,9 @@ public class TankFrame extends Frame {
                     bD = true;
                     break;
                 case KeyEvent.VK_CONTROL:
+                    tank.fire();
+                    break;
+                case KeyEvent.VK_SHIFT:
                     tank.fire();
                     break;
                 default:

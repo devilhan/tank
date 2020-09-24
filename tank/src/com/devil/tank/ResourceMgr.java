@@ -8,9 +8,10 @@ import java.io.IOException;
 /**
  * @author Hanyanjiao
  * @date 2020/9/22
- * 管理资源，将图片load到缓存中
+ * 管理资源，将图片load 到缓存中
  */
 public class ResourceMgr {
+
     public static BufferedImage GOOD_TANKD ,GOOD_TANKR,GOOD_TANKL,GOOD_TANKU;
 
     public static BufferedImage BAD_TANKD ,BAD_TANKR,BAD_TANKL,BAD_TANKU;

@@ -1,5 +1,8 @@
 package com.devil.tank;
 
+import com.devil.tank.strategy.DefaultFireStategy;
+import com.devil.tank.strategy.FireStrategy;
+import com.devil.tank.strategy.FourDirFireStrategy;
 import lombok.Data;
 
 import java.awt.*;
@@ -10,21 +13,23 @@ import java.util.Random;
  * @date 2020/9/21
  */
 @Data
-public class Tank {
+public class Tank{
+
+    FireStrategy fs;
 
     private int x,y;
-    private Dir dir = Dir.DOWN;
+    public Dir dir = Dir.DOWN;
     private static final int SPEED = PropertyMgr.get("tankSpeed");
 
     private Random random = new Random();
 
-    private TankFrame frame = null;
+    public TankFrame frame = null;
 
     private boolean moving = true;
 
     private boolean living = true;
 
-    private Group group = Group.BAD;
+    public Group group = Group.BAD;
 
     Rectangle rect = new Rectangle();
 
@@ -32,7 +37,7 @@ public class Tank {
 
     public static final int HEIGHT = ResourceMgr.GOOD_TANKU.getHeight();
 
-    public Tank(int x, int y, Dir dir,Group group,TankFrame frame) {
+    public Tank(int x, int y, Dir dir, Group group, TankFrame frame) {
         this.x = x;
         this.y = y;
         this.dir = dir;
@@ -43,6 +48,9 @@ public class Tank {
         rect.y = this.y;
         rect.width = WIDTH;
         rect.height = HEIGHT;
+
+        if (group == Group.GOOD) fs = new FourDirFireStrategy();
+        else fs = new DefaultFireStategy();
     }
 
     public void paint(Graphics g) {
@@ -54,11 +62,11 @@ public class Tank {
         g.setColor(c);*/
 
         switch (dir){
-            case RIGHT:
-                g.drawImage(this.group == Group.GOOD ? ResourceMgr.GOOD_TANKR:ResourceMgr.BAD_TANKR,x,y,null);  //Ì¹¿ËÍ¼Æ¬
-                break;
             case DOWN:
                 g.drawImage(this.group == Group.GOOD ? ResourceMgr.GOOD_TANKD :ResourceMgr.BAD_TANKD,x,y,null);  //Ì¹¿ËÍ¼Æ¬
+                break;
+            case RIGHT:
+                g.drawImage(this.group == Group.GOOD ? ResourceMgr.GOOD_TANKR:ResourceMgr.BAD_TANKR,x,y,null);  //Ì¹¿ËÍ¼Æ¬
                 break;
             case UP:
                 g.drawImage(this.group == Group.GOOD ? ResourceMgr.GOOD_TANKU: ResourceMgr.BAD_TANKU,x,y,null);  //Ì¹¿ËÍ¼Æ¬
@@ -71,25 +79,23 @@ public class Tank {
         }
 
         move();
-//        g.fill3DRect(30,30,10,10,false);
-//        x += 10;
-//        y += 10;
     }
 
     private void move() {
         if (!moving) return;
         switch (dir){
-            case UP:
-                y -= SPEED;
-                break;
             case LEFT:
                 x -= SPEED;
                 break;
-            case DOWN:
-                y += SPEED;
+            case UP:
+                y -= SPEED;
                 break;
+
             case RIGHT:
                 x += SPEED;
+                break;
+            case DOWN:
+                y += SPEED;
                 break;
             default:
                 break;
@@ -97,8 +103,7 @@ public class Tank {
 
 //        randomDir();
         if (this.group == Group.BAD && random.nextInt(100)>95 ) this.fire();
-        if (this.group == Group.BAD && random.nextInt(100)>95)
-            randomDir();
+        if (this.group == Group.BAD && random.nextInt(100)>95) randomDir();
 
         boundCheck();
 
@@ -106,39 +111,22 @@ public class Tank {
         rect.y = this.y;
     }
 
+    /*public void fire(FireStrategy strategy){
+
+    }*/
+
+    public void fire(){
+        fs.file(this);
+    }
+
     private void boundCheck() {
         if (this.x<2 ) x = 2;
         if (this.y<28)  y = 28;
-        if (this.x > TankFrame.GAME_WIDTH - Tank.WIDTH-2) x = TankFrame.GAME_WIDTH - Tank.WIDTH-2;
-        if (this.y > TankFrame.GAME_HEIGHT - Tank.HEIGHT-2) y = TankFrame.GAME_HEIGHT-Tank.HEIGHT-2;
+        if (this.x > TankFrame.GAME_WIDTH - this.WIDTH-2) x = TankFrame.GAME_WIDTH - this.WIDTH-2;
+        if (this.y > TankFrame.GAME_HEIGHT - this.HEIGHT-2) y = TankFrame.GAME_HEIGHT- this.HEIGHT-2;
     }
     private void randomDir() {
         this.dir = Dir.values()[random.nextInt(4)];
-    }
-
-    public void fire() {
-        int bx = 0,by = 0;
-        switch (dir){
-            case DOWN:
-                bx = this.x + WIDTH/2 - Bullet.WIDTH;
-                by = this.y + HEIGHT - Bullet.HEIGHT;
-                break;
-            case LEFT:
-                bx = this.x - Bullet.WIDTH;
-                by = this.y + HEIGHT/2 - Bullet.HEIGHT/2;
-                break;
-            case UP:
-                bx = this.x + WIDTH/2 - Bullet.WIDTH;
-                by = this.y - Bullet.HEIGHT;
-                break;
-            case RIGHT:
-                bx = this.x + WIDTH - Bullet.WIDTH/2;
-                by = this.y + HEIGHT/2;
-                break;
-            default:
-                break;
-        }
-        frame.bullets.add(new Bullet(bx,by,this.dir,this.group,frame));
     }
 
     public void die() {

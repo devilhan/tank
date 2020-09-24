@@ -4,3 +4,7 @@ tankSpeed=5
 bulletSpeed=10
 gameWidth=1080
 gameHeight=720
+
+#FireStrategy
+BadFs=类名
+GoodFs=类名

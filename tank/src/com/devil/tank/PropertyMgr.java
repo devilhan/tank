@@ -8,6 +8,8 @@ import java.util.Properties;
  * @date 2020/9/23
  */
 public class PropertyMgr {
+
+    //µ¥ÀýÄ£Ê½
     static Properties props = new Properties();
 
     static {

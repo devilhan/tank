@@ -10,6 +10,7 @@ import java.awt.Rectangle;
 import java.util.Random;
 import java.util.UUID;
 
+
 public class Tank {
 	private static final int SPEED = 2;
 	public static int WIDTH = ResourceMgr.goodTankU.getWidth();
