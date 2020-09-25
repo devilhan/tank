@@ -1,5 +1,6 @@
 package com.devil.tank;
 
+import com.devil.tank.abstrategyFactory.BaseExplode;
 import lombok.Data;
 
 import java.awt.*;
@@ -9,7 +10,7 @@ import java.awt.*;
  * @date 2020/9/23
  */
 @Data
-public class Explode {
+public class Explode extends BaseExplode {
 
     public static final int HEIGHT = ResourceMgr.explodes[0].getHeight();
     public static final int WIDTH = ResourceMgr.explodes[0].getWidth() ;
@@ -27,11 +28,10 @@ public class Explode {
         this.y = y;
         this.frame = frame;
 
-        new Audio("audio/explode.wav").play();
+        new Thread(()->new Audio("audio/explode.wav").play()).start();
     }
 
     public void paint(Graphics g){
-
         g.drawImage(ResourceMgr.explodes[step++],x,y,null);
         if (step>= ResourceMgr.explodes.length) frame.explodes.remove(this);
     }

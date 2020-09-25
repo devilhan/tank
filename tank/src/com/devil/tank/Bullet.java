@@ -1,5 +1,7 @@
 package com.devil.tank;
 
+import com.devil.tank.abstrategyFactory.BaseBullet;
+import com.devil.tank.abstrategyFactory.BaseTank;
 import lombok.Data;
 
 import java.awt.*;
@@ -9,7 +11,8 @@ import java.awt.*;
  * @date 2020/9/22
  */
 @Data
-public class Bullet {
+public class Bullet extends BaseBullet {
+
     private static final int SPEED = PropertyMgr.get("bulletSpeed");
 
     public static final int HEIGHT = ResourceMgr.BULLETD.getHeight();
@@ -22,7 +25,7 @@ public class Bullet {
 
     private boolean living = true;
 
-    TankFrame frame = null;
+    TankFrame frame;
 
     Rectangle rect = new Rectangle();
 
@@ -32,6 +35,7 @@ public class Bullet {
         this.dir = dir;
         this.group = group;
         this.frame = frame;
+
         rect.x = this.x;
         rect.y = this.y;
         rect.width = WIDTH;
@@ -40,6 +44,7 @@ public class Bullet {
         frame.bullets.add(this);
     }
 
+    @Override
     public void paint(Graphics g){
         if (!living){
             frame.bullets.remove(this);
@@ -60,13 +65,6 @@ public class Bullet {
             default:
                 break;
         }
-        //测试
-        /*Color c = g.getColor();
-        g.setColor(Color.red);
-        g.fillOval(x,y,WIDTH,HEIGHT);
-        g.setColor(c);*/
-        //画子弹图片
-
         move();
     }
 
@@ -96,7 +94,9 @@ public class Bullet {
             living = false;
     }
 
-    public void collideWith(Tank tank) {
+    @Override
+    public void collideWith(BaseTank tank) {
+
         if (this.group == tank.getGroup()) return;
 
         //TODO 用一个rect 来记录子弹的位置
@@ -105,12 +105,12 @@ public class Bullet {
 //        Rectangle rect = new Rectangle(this.x,this.y,WIDTH,HEIGHT);
 
         //坦克矩形
-        Rectangle rect2 = new Rectangle(tank.getX(),tank.getY(),tank.WIDTH,tank.HEIGHT);
+//        Rectangle rect2 = new Rectangle(tank.getX(),tank.getY(),tank.WIDTH,tank.HEIGHT);
 
-        if (rect.intersects(rect2)){
-            int ex = this.x + Tank.WIDTH/2 - Explode.WIDTH/2;
-            int ey = this.y + Tank.HEIGHT/2 - Explode.HEIGHT/2;
-            frame.explodes.add(new Explode(ex,ey,frame));
+        if (rect.intersects(tank.rect)){
+            int ex = tank.getX() + BaseTank.WIDTH/2 - Explode.WIDTH/2;
+            int ey = tank.getY() + BaseTank.HEIGHT/2 - Explode.HEIGHT/2;
+            frame.explodes.add(frame.gf.createExplode(ex,ey,frame));
             tank.die();
             this.die();
         }

@@ -1,9 +1,13 @@
-package com.devil.tank;
+package com.devil.tank.abstrategyFactory;
 
-import com.devil.tank.abstrategyFactory.BaseTank;
+import com.devil.tank.Dir;
+import com.devil.tank.Group;
+import com.devil.tank.TankFrame;
 import com.devil.tank.strategy.DefaultFireStrategy;
 import com.devil.tank.strategy.FireStrategy;
 import com.devil.tank.strategy.FourDirFireStrategy;
+
+import com.devil.tank.ResourceMgr;
 import lombok.Data;
 
 import java.awt.*;
@@ -11,40 +15,40 @@ import java.util.Random;
 
 /**
  * @author Hanyanjiao
- * @date 2020/9/21
+ * @date 2020/9/25
  */
 @Data
-public class Tank extends BaseTank {
+public class RectTank extends BaseTank {
 
-    FireStrategy fs;
 
-    private int x,y;
-    public Dir dir = Dir.DOWN;
-    private static final int SPEED = PropertyMgr.get("tankSpeed");
+    private static final int SPEED = 2;
+    public static int WIDTH = ResourceMgr.GOOD_TANKU.getWidth();
+
+    public static int HEIGHT = ResourceMgr.GOOD_TANKU.getHeight();
+
+    public Rectangle rect = new Rectangle();
 
     private Random random = new Random();
 
-//    public TankFrame frame = null;
+    int x, y;
+
+    public Dir dir = Dir.DOWN;
 
     private boolean moving = true;
+//    TankFrame frame = null;
 
     private boolean living = true;
+    Group group = Group.BAD;
 
-    public Group group = Group.BAD;
+    FireStrategy fs;
 
-//    Rectangle rect = new Rectangle();
-
-    public static final int WIDTH = ResourceMgr.GOOD_TANKU.getWidth();
-
-    public static final int HEIGHT = ResourceMgr.GOOD_TANKU.getHeight();
-
-    public Tank(int x, int y, Dir dir, Group group, TankFrame frame) {
+    public RectTank(int x, int y, Dir dir, Group group, TankFrame tf) {
         super();
         this.x = x;
         this.y = y;
         this.dir = dir;
         this.group = group;
-        this.frame = frame;
+        this.frame = tf;
 
         rect.x = this.x;
         rect.y = this.y;
@@ -55,20 +59,21 @@ public class Tank extends BaseTank {
         else fs = new DefaultFireStrategy();
     }
 
+    @Override
     public void paint(Graphics g) {
         if (!living) frame.enemies.remove(this);
         //²âÊÔ£¬·½¿é±íÊ¾Ì¹¿Ë
-        /*Color c = g.getColor();
-        g.setColor(Color.yellow);
+        Color c = g.getColor();
+        g.setColor(this.group == Group.GOOD ?Color.yellow :Color.green);
         g.fillRect(x,y,50,50);
-        g.setColor(c);*/
+        g.setColor(c);
 
-        switch (dir){
+       /* switch (dir){
             case DOWN:
-                g.drawImage(this.group == Group.GOOD ? ResourceMgr.GOOD_TANKD :ResourceMgr.BAD_TANKD,x,y,null);  //Ì¹¿ËÍ¼Æ¬
+                g.drawImage(this.group == Group.GOOD ? ResourceMgr.GOOD_TANKD : ResourceMgr.BAD_TANKD,x,y,null);  //Ì¹¿ËÍ¼Æ¬
                 break;
             case RIGHT:
-                g.drawImage(this.group == Group.GOOD ? ResourceMgr.GOOD_TANKR:ResourceMgr.BAD_TANKR,x,y,null);  //Ì¹¿ËÍ¼Æ¬
+                g.drawImage(this.group == Group.GOOD ? ResourceMgr.GOOD_TANKR: ResourceMgr.BAD_TANKR,x,y,null);  //Ì¹¿ËÍ¼Æ¬
                 break;
             case UP:
                 g.drawImage(this.group == Group.GOOD ? ResourceMgr.GOOD_TANKU: ResourceMgr.BAD_TANKU,x,y,null);  //Ì¹¿ËÍ¼Æ¬
@@ -78,7 +83,7 @@ public class Tank extends BaseTank {
                 break;
             default:
                 break;
-        }
+        }*/
 
         move();
     }
@@ -86,11 +91,13 @@ public class Tank extends BaseTank {
     private void move() {
         if (!moving) return;
         switch (dir){
-            case LEFT:
-                x -= SPEED;
-                break;
+
             case UP:
                 y -= SPEED;
+                break;
+
+            case LEFT:
+                x -= SPEED;
                 break;
 
             case RIGHT:
@@ -119,7 +126,22 @@ public class Tank extends BaseTank {
 
     @Override
     public void fire(){
-        fs.fire((BaseTank)this);
+
+        fs.fire((BaseTank) this);
+       /* int bx ,by;
+        bx = this.getX() + this.WIDTH/2 - Bullet.WIDTH;
+        by = this.getY() + this.HEIGHT - Bullet.HEIGHT;
+        new Bullet(bx,by,Dir.DOWN,this.group,this.frame);
+        bx = this.getX() - Bullet.WIDTH;
+        by = this.getY() + this.HEIGHT/2 - Bullet.HEIGHT/2;
+        new Bullet(bx,by,Dir.LEFT,this.group,this.frame);
+        bx = this.getX() + this.WIDTH/2 - Bullet.WIDTH;
+        by = this.getY() - Bullet.HEIGHT;
+        new Bullet(bx,by,Dir.UP,this.group,this.frame);
+        bx = this.getX() + this.WIDTH - Bullet.WIDTH/2;
+        by = this.getY() + this.HEIGHT/2;
+        new Bullet(bx,by,Dir.RIGHT,this.group,this.frame);*/
+
     }
 
     private void boundCheck() {
@@ -132,13 +154,8 @@ public class Tank extends BaseTank {
         this.dir = Dir.values()[random.nextInt(4)];
     }
 
+    @Override
     public void die() {
         this.living = false;
     }
-
-    @Override
-    public int getX() {
-        return this.x;
-    }
-
 }

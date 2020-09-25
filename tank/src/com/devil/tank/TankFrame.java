@@ -1,5 +1,8 @@
 package com.devil.tank;
 
+import com.devil.tank.abstrategyFactory.*;
+import lombok.Data;
+
 import java.awt.*;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
@@ -14,20 +17,24 @@ import java.util.List;
  */
 public class TankFrame extends Frame {
 
-    Tank tank = new Tank(200,400,Dir.UP,Group.GOOD,this);
+//    RectTank tank = new RectTank(200,400,Dir.RIGHT,Group.GOOD,this);
 
-    List<Tank> enemies = new ArrayList<>();
+    public List<BaseTank> enemies = new ArrayList<>();
 
-    List<Bullet> bullets = new ArrayList<>();
+    public List<BaseBullet> bullets = new ArrayList<>();
 
-    List<Explode> explodes = new ArrayList<>();
+    public List<BaseExplode> explodes = new ArrayList<>();
 
 //    Explode explode = new Explode(100,100,this);
 
 //    Bullet bullet = new Bullet(300,300,Dir.DOWN);
 
-    static final int GAME_WIDTH = PropertyMgr.get("gameWidth");
-    static final int GAME_HEIGHT = PropertyMgr.get("gameHeight");
+    public GameFactory gf = new RectFactory();
+
+    BaseTank tank = gf.createTank(200,400,Dir.UP,Group.GOOD,this);
+
+    public static final int GAME_WIDTH = PropertyMgr.get("gameWidth");
+    public static final int GAME_HEIGHT = PropertyMgr.get("gameHeight");
 
     public TankFrame(){
         //窗口类
@@ -90,12 +97,6 @@ public class TankFrame extends Frame {
                 case KeyEvent.VK_DOWN:
                     bD = true;
                     break;
-                case KeyEvent.VK_CONTROL:
-                    tank.fire();
-                    break;
-                case KeyEvent.VK_SHIFT:
-                    tank.fire();
-                    break;
                 default:
                     break;
             }
@@ -119,6 +120,9 @@ public class TankFrame extends Frame {
                     break;
                 case KeyEvent.VK_DOWN:
                     bD = false;
+                    break;
+                case KeyEvent.VK_CONTROL:
+                    tank.fire();
                     break;
                 default:
                     break;
@@ -146,6 +150,7 @@ public class TankFrame extends Frame {
         g.setColor(Color.white);
         g.drawString("子弹的数量："+bullets.size(),10,60);
         g.drawString("敌人的数量："+enemies.size(),10,90);
+        g.drawString("爆炸的数量："+explodes.size(),10,120);
         g.setColor(c);
 //        System.out.println("paint");
         tank.paint(g);

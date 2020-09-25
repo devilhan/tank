@@ -1,8 +1,8 @@
 package com.devil.tank.strategy;
 
-import com.devil.tank.Bullet;
 import com.devil.tank.Dir;
-import com.devil.tank.Tank;
+import com.devil.tank.abstrategyFactory.BaseBullet;
+import com.devil.tank.abstrategyFactory.BaseTank;
 
 /**
  * @author Hanyanjiao
@@ -11,19 +11,19 @@ import com.devil.tank.Tank;
 public class FourDirFireStrategy implements FireStrategy {
 
     @Override
-    public void file(Tank t) {
+    public void fire(BaseTank t) {
         int bx ,by;
-        bx = t.getX() + t.WIDTH/2 - Bullet.WIDTH;
-        by = t.getY() + t.HEIGHT - Bullet.HEIGHT;
-        new Bullet(bx,by,Dir.DOWN,t.group,t.frame);
-        bx = t.getX() - Bullet.WIDTH;
-        by = t.getY() + t.HEIGHT/2 - Bullet.HEIGHT/2;
-        new Bullet(bx,by,Dir.LEFT,t.group,t.frame);
-        bx = t.getX() + t.WIDTH/2 - Bullet.WIDTH;
-        by = t.getY() - Bullet.HEIGHT;
-        new Bullet(bx,by,Dir.UP,t.group,t.frame);
-        bx = t.getX() + t.WIDTH - Bullet.WIDTH/2;
+        bx = t.getX() + t.WIDTH/2 - BaseBullet.WIDTH;
+        by = t.getY() + t.HEIGHT - BaseBullet.HEIGHT;
+        t.frame.gf.createBullet(bx,by,Dir.DOWN,t.getGroup(),t.frame);
+        bx = t.getX() - BaseBullet.WIDTH;
+        by = t.getY() + t.HEIGHT/2 - BaseBullet.HEIGHT/2;
+        t.frame.gf.createBullet(bx,by,Dir.LEFT,t.getGroup(),t.frame);
+        bx = t.getX() + t.WIDTH/2 - BaseBullet.WIDTH;
+        by = t.getY() - BaseBullet.HEIGHT;
+        t.frame.gf.createBullet(bx,by,Dir.UP,t.getGroup(),t.frame);
+        bx = t.getX() + t.WIDTH - BaseBullet.WIDTH/2;
         by = t.getY() + t.HEIGHT/2;
-        new Bullet(bx,by,Dir.RIGHT,t.group,t.frame);
+        t.frame.gf.createBullet(bx,by,Dir.RIGHT,t.getGroup(),t.frame);
     }
 }

@@ -19,7 +19,7 @@ public class Test {
 
        //初始化敌方坦克
         for(int i=0;i<initTankCount;i++){
-            t.enemies.add(new Tank(random.nextInt(800),random.nextInt(600),Dir.DOWN,Group.BAD,t));
+            t.enemies.add(t.gf.createTank(random.nextInt(800),random.nextInt(600),Dir.DOWN,Group.BAD,t));
         }
 
 //        new Thread(()->new Audio("audio/war1.wav").loop()).start();

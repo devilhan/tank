@@ -1,12 +1,12 @@
 package com.devil.tank.strategy;
 
 
-import com.devil.tank.Tank;
+import com.devil.tank.abstrategyFactory.BaseTank;
 
 /**
  * @author Hanyanjiao
  * @date 2020/9/24
  */
 public interface FireStrategy {
-    void file(Tank t);
+    void fire(BaseTank t);
 }
