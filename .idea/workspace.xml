@@ -2,31 +2,67 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0d84a190-4d77-4270-b176-447402ae8568" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/tank.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/tank.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tank/src/com/devil/tank/Bullet.java" beforeDir="false" afterPath="$PROJECT_DIR$/tank/src/com/devil/tank/Bullet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tank/src/com/devil/tank/Explode.java" beforeDir="false" afterPath="$PROJECT_DIR$/tank/src/com/devil/tank/Explode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tank/src/com/devil/tank/Tank.java" beforeDir="false" afterPath="$PROJECT_DIR$/tank/src/com/devil/tank/Tank.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tank/src/com/devil/tank/TankFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/tank/src/com/devil/tank/TankFrame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tank/src/com/devil/tank/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/tank/src/com/devil/tank/Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tank/src/com/devil/tank/strategy/DefaultFireStategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/tank/src/com/devil/tank/strategy/DefaultFireStrategy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tank/src/com/devil/tank/strategy/FireStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/tank/src/com/devil/tank/strategy/FireStrategy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tank/src/com/devil/tank/strategy/FourDirFireStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/tank/src/com/devil/tank/strategy/FourDirFireStrategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tank/src/com/devil/tank/Audio.java" beforeDir="false" afterPath="$PROJECT_DIR$/tank/src/com/devil/dp/abstrategy/Audio.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tank/src/com/devil/tank/Bullet.java" beforeDir="false" afterPath="$PROJECT_DIR$/tank/src/com/devil/dp/abstrategy/Bullet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tank/src/com/devil/tank/Dir.java" beforeDir="false" afterPath="$PROJECT_DIR$/tank/src/com/devil/dp/abstrategy/Dir.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tank/src/com/devil/tank/Explode.java" beforeDir="false" afterPath="$PROJECT_DIR$/tank/src/com/devil/dp/abstrategy/Explode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tank/src/com/devil/tank/Group.java" beforeDir="false" afterPath="$PROJECT_DIR$/tank/src/com/devil/dp/abstrategy/Group.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tank/src/com/devil/tank/ImageUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/tank/src/com/devil/dp/abstrategy/ImageUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tank/src/com/devil/tank/PropertyMgr.java" beforeDir="false" afterPath="$PROJECT_DIR$/tank/src/com/devil/dp/abstrategy/PropertyMgr.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tank/src/com/devil/tank/ResourceMgr.java" beforeDir="false" afterPath="$PROJECT_DIR$/tank/src/com/devil/dp/abstrategy/ResourceMgr.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tank/src/com/devil/tank/Tank.java" beforeDir="false" afterPath="$PROJECT_DIR$/tank/src/com/devil/dp/abstrategy/Tank.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tank/src/com/devil/tank/TankFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/tank/src/com/devil/dp/abstrategy/TankFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tank/src/com/devil/tank/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/tank/src/com/devil/dp/abstrategy/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tank/src/com/devil/tank/abstrategyFactory/BaseBullet.java" beforeDir="false" afterPath="$PROJECT_DIR$/tank/src/com/devil/dp/abstrategy/abstrategyFactory/BaseBullet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tank/src/com/devil/tank/abstrategyFactory/BaseExplode.java" beforeDir="false" afterPath="$PROJECT_DIR$/tank/src/com/devil/dp/abstrategy/abstrategyFactory/BaseExplode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tank/src/com/devil/tank/abstrategyFactory/BaseTank.java" beforeDir="false" afterPath="$PROJECT_DIR$/tank/src/com/devil/dp/abstrategy/abstrategyFactory/BaseTank.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tank/src/com/devil/tank/abstrategyFactory/DefaultFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/tank/src/com/devil/dp/abstrategy/abstrategyFactory/DefaultFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tank/src/com/devil/tank/abstrategyFactory/GameFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/tank/src/com/devil/dp/abstrategy/abstrategyFactory/GameFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tank/src/com/devil/tank/abstrategyFactory/RectBullet.java" beforeDir="false" afterPath="$PROJECT_DIR$/tank/src/com/devil/dp/abstrategy/abstrategyFactory/RectBullet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tank/src/com/devil/tank/abstrategyFactory/RectExplode.java" beforeDir="false" afterPath="$PROJECT_DIR$/tank/src/com/devil/dp/abstrategy/abstrategyFactory/RectExplode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tank/src/com/devil/tank/abstrategyFactory/RectFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/tank/src/com/devil/dp/abstrategy/abstrategyFactory/RectFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tank/src/com/devil/tank/abstrategyFactory/RectTank.java" beforeDir="false" afterPath="$PROJECT_DIR$/tank/src/com/devil/dp/abstrategy/abstrategyFactory/RectTank.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tank/src/com/devil/tank/strategy/DefaultFireStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/tank/src/com/devil/dp/abstrategy/strategy/DefaultFireStrategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tank/src/com/devil/tank/strategy/FireStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/tank/src/com/devil/dp/abstrategy/strategy/FireStrategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tank/src/com/devil/tank/strategy/FourDirFireStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/tank/src/com/devil/dp/abstrategy/strategy/FourDirFireStrategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/devil/tank/Audio.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/devil/tank/Bullet$1.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/devil/tank/Bullet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/devil/tank/Explode.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/devil/tank/Explode.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/devil/tank/Dir.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/devil/tank/Explode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/devil/tank/Group.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/devil/tank/ImageUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/devil/tank/PropertyMgr.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/devil/tank/ResourceMgr.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/devil/tank/Tank$1.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/devil/tank/Tank.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/devil/tank/TankFrame$1.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/devil/tank/TankFrame$MyKeyListener.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/devil/tank/TankFrame.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/devil/tank/Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/devil/tank/Test.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/devil/tank/strategy/DefaultFireStategy$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/devil/tank/strategy/DefaultFireStategy.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/devil/tank/strategy/FireStrategy.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/devil/tank/strategy/FireStrategy.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/devil/tank/Test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/devil/tank/abstrategyFactory/BaseBullet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/devil/tank/abstrategyFactory/BaseExplode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/devil/tank/abstrategyFactory/BaseTank.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/devil/tank/abstrategyFactory/DefaultFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/devil/tank/abstrategyFactory/GameFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/devil/tank/abstrategyFactory/RectBullet$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/devil/tank/abstrategyFactory/RectBullet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/devil/tank/abstrategyFactory/RectExplode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/devil/tank/abstrategyFactory/RectFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/devil/tank/abstrategyFactory/RectTank$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/devil/tank/abstrategyFactory/RectTank.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/devil/tank/strategy/DefaultFireStrategy$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/devil/tank/strategy/DefaultFireStrategy.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/devil/tank/strategy/FireStrategy.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/devil/tank/strategy/FourDirFireStrategy.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/config" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/config" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
+    <ignored path="$PROJECT_DIR$/spring/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -34,125 +70,136 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="vertical" split-proportion="0.5">
-      <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="TankFrame.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/tank/src/com/devil/tank/TankFrame.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="230">
-                  <caret line="25" column="32" lean-forward="true" selection-start-line="25" selection-start-column="32" selection-end-line="25" selection-end-column="32" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="Bullet.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/tank/src/com/devil/tank/Bullet.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1254">
-                  <caret line="99" column="26" lean-forward="true" selection-start-line="99" selection-start-column="26" selection-end-line="99" selection-end-column="26" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                    <element signature="docComment;class#Bullet#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="Explode.java" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/tank/src/com/devil/tank/Explode.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="152">
-                  <caret line="33" selection-start-line="33" selection-end-line="33" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="BaseExplode.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/tank/src/com/devil/tank/abstrategyFactory/BaseExplode.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="132">
-                  <caret line="9" column="25" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="RectExplode.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/tank/src/com/devil/tank/abstrategyFactory/RectExplode.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="40">
-                  <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="RectFactory.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/tank/src/com/devil/tank/abstrategyFactory/RectFactory.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="198">
-                  <caret line="18" column="23" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                    <element signature="e#460#461#0" expanded="true" />
-                    <element signature="e#506#507#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="RectBullet.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/tank/src/com/devil/tank/abstrategyFactory/RectBullet.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="427">
-                  <caret line="88" column="22" selection-start-line="88" selection-start-column="22" selection-end-line="88" selection-end-column="22" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="BaseBullet.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/tank/src/com/devil/tank/abstrategyFactory/BaseBullet.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="330">
-                  <caret line="18" selection-start-line="18" selection-end-line="18" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file leaf-file-name="RectExplode.java" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/tank/src/com/devil/tank/abstrategyFactory/RectExplode.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="130">
-                  <caret line="36" column="33" selection-start-line="36" selection-start-column="33" selection-end-line="36" selection-end-column="33" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="Tank.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tank/src/com/devil/dp/gamemodel/Tank.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1364">
+              <caret line="62" column="32" selection-start-line="62" selection-start-column="32" selection-end-line="62" selection-end-column="32" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1781#1782#0" expanded="true" />
+                <element signature="e#1801#1802#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GameModel.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tank/src/com/devil/dp/gamemodel/GameModel.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="178">
+              <caret line="43" column="17" selection-start-line="43" selection-start-column="17" selection-end-line="43" selection-end-column="17" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Collider.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tank/src/com/devil/dp/gamemodel/cor/Collider.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="110">
+              <caret line="8" column="16" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BulletTankCollider.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tank/src/com/devil/dp/gamemodel/cor/BulletTankCollider.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="374">
+              <caret line="29" column="13" selection-start-line="22" selection-start-column="42" selection-end-line="29" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BulletWallCollider.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tank/src/com/devil/dp/gamemodel/cor/BulletWallCollider.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="220">
+              <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TankTankCollider.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/tank/src/com/devil/dp/gamemodel/cor/TankTankCollider.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="308">
+              <caret line="29" column="29" lean-forward="true" selection-start-line="29" selection-start-column="29" selection-end-line="29" selection-end-column="29" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TankWallCollider.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tank/src/com/devil/dp/gamemodel/cor/TankWallCollider.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="352">
+              <caret line="22" column="9" selection-start-line="14" selection-start-column="53" selection-end-line="22" selection-end-column="9" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Dir.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tank/src/com/devil/dp/gamemodel/Dir.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="44">
+              <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ColliderChain.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tank/src/com/devil/dp/gamemodel/cor/ColliderChain.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="258">
+              <caret line="19" column="36" lean-forward="true" selection-start-line="19" selection-start-column="36" selection-end-line="19" selection-end-column="36" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Bullet.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tank/src/com/devil/dp/gamemodel/Bullet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-504">
+              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -176,6 +223,7 @@
       <find>tank</find>
       <find>collideWith</find>
       <find>living</find>
+      <find>frame</find>
     </findStrings>
     <replaceStrings>
       <replace>this</replace>
@@ -187,57 +235,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/tank/src/com/hanyanjiao/tank/net/MsgDecoder.java" />
-        <option value="$PROJECT_DIR$/tank/src/com/hanyanjiao/tank/net/MsgEncoder.java" />
-        <option value="$PROJECT_DIR$/tank/src/com/hanyanjiao/tank/net/TankDirChangedMsg.java" />
-        <option value="$PROJECT_DIR$/tank/src/com/hanyanjiao/tank/net/TankJoinMsg.java" />
-        <option value="$PROJECT_DIR$/tank/src/com/hanyanjiao/tank/net/TankStopMsg.java" />
-        <option value="$PROJECT_DIR$/tank/src/com/hanyanjiao/tank/net/TankStartMovingMsg.java" />
-        <option value="$PROJECT_DIR$/tank/src/com/hanyanjiao/tank/Explode.java" />
-        <option value="$PROJECT_DIR$/tank/src/com/hanyanjiao/tank/Main.java" />
-        <option value="$PROJECT_DIR$/tank/src/com/hanyanjiao/tank/ResourceMgr.java" />
-        <option value="$PROJECT_DIR$/tank/src/com/hanyanjiao/tank/TankFrame.java" />
-        <option value="$PROJECT_DIR$/tank/src/com/hanyanjiao/tank/net/Server.java" />
-        <option value="$PROJECT_DIR$/tank/src/test/ImageRotateTest.java" />
-        <option value="$PROJECT_DIR$/tank/src/test/TankDirChangedMsgCodecTest.java" />
-        <option value="$PROJECT_DIR$/tank/src/test/TankJoinMsgCodecTest.java" />
-        <option value="$PROJECT_DIR$/tank/src/test/TankStartMovingMsgCodecTest.java" />
-        <option value="$PROJECT_DIR$/tank/src/com/devil/tank/T.java" />
-        <option value="$PROJECT_DIR$/tank/src/com/devil/tank/Dir.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/tank/src/test/ImageTest.java" />
-        <option value="$PROJECT_DIR$/tank/src/com/devil/tank/Group.java" />
-        <option value="$PROJECT_DIR$/tank/src/com/devil/tank/ImageUtil.java" />
-        <option value="$PROJECT_DIR$/tank/src/com/devil/tank/Audio.java" />
+        <option value="$PROJECT_DIR$/tank/src/com/devil/tank/abstrategyFactory/RectExplode.java" />
         <option value="$PROJECT_DIR$/tank/src/com/devil/tank/readme" />
-        <option value="$PROJECT_DIR$/tank/src/com/devil/tank/PropertyMgr.java" />
-        <option value="$PROJECT_DIR$/tank/src/com/devil/tank/ResourceMgr.java" />
-        <option value="$PROJECT_DIR$/tank/src/com/devil/tank/Fire.java" />
-        <option value="$PROJECT_DIR$/tank/src/com/devil/tank/TankFire.java" />
-        <option value="$PROJECT_DIR$/tank/src/com/devil/tank/BadTank.java" />
-        <option value="$PROJECT_DIR$/tank/src/com/devil/tank/GoodTank.java" />
-        <option value="$PROJECT_DIR$/tank/src/com/devil/tank/strategy/Tank.java" />
-        <option value="$PROJECT_DIR$/tank/src/com/hanyanjiao/tank/Tank.java" />
-        <option value="$PROJECT_DIR$/tank/src/com/devil/tank/test/BadTank.java" />
-        <option value="$PROJECT_DIR$/tank/src/com/devil/tank/abstrategyFactory/BaseExplode.java" />
-        <option value="$PROJECT_DIR$/tank/src/com/devil/tank/abstrategyFactory/GameFactoty.java" />
-        <option value="$PROJECT_DIR$/tank/src/com/devil/tank/abstrategyFactory/RectFactory.java" />
-        <option value="$PROJECT_DIR$/tank/src/com/devil/tank/Explode.java" />
-        <option value="$PROJECT_DIR$/tank/src/com/devil/tank/abstrategyFactory/DefaultFactory.java" />
-        <option value="$PROJECT_DIR$/tank/src/com/devil/tank/Test.java" />
-        <option value="$PROJECT_DIR$/tank/src/com/devil/tank/abstrategyFactory/BaseBullet.java" />
-        <option value="$PROJECT_DIR$/tank/src/com/devil/tank/strategy/FireStrategy.java" />
-        <option value="$PROJECT_DIR$/tank/src/config" />
-        <option value="$PROJECT_DIR$/tank/src/com/devil/tank/Bullet.java" />
-        <option value="$PROJECT_DIR$/tank/src/com/devil/tank/strategy/DefaultFireStategy.java" />
-        <option value="$PROJECT_DIR$/tank/src/com/devil/tank/strategy/FourDirFireStrategy.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/spring/pom.xml" />
+        <option value="$PROJECT_DIR$/spring/src/main/java/com/devilhan/Driver.java" />
+        <option value="$PROJECT_DIR$/spring/src/main/resources/app.xml" />
+        <option value="$PROJECT_DIR$/spring/src/main/java/com/devilhan/Tank.java" />
+        <option value="$PROJECT_DIR$/spring/src/main/java/com/devilhan/Test.java" />
+        <option value="$PROJECT_DIR$/tank/src/com/devil/tank/abstrategyFactory/readme" />
+        <option value="$PROJECT_DIR$/tank/src/com/devil/tank/GameModel.java" />
+        <option value="$PROJECT_DIR$/tank/src/com/devil/tank/strategy/GameObejct.java" />
         <option value="$PROJECT_DIR$/tank/src/com/devil/tank/abstrategyFactory/BaseTank.java" />
         <option value="$PROJECT_DIR$/tank/src/com/devil/tank/Tank.java" />
-        <option value="$PROJECT_DIR$/tank/src/com/devil/tank/strategy/DefaultFireStrategy.java" />
-        <option value="$PROJECT_DIR$/tank/src/com/devil/tank/abstrategyFactory/RectTank.java" />
+        <option value="$PROJECT_DIR$/tank/src/com/devil/tank/Test.java" />
         <option value="$PROJECT_DIR$/tank/src/com/devil/tank/TankFrame.java" />
-        <option value="$PROJECT_DIR$/tank/src/com/devil/tank/abstrategyFactory/RectBullet.java" />
-        <option value="$PROJECT_DIR$/tank/src/com/devil/tank/abstrategyFactory/RectExplode.java" />
+        <option value="$PROJECT_DIR$/tank/src/com/devil/tank/abstrategyFactory/RectTank.java" />
+        <option value="$PROJECT_DIR$/tank/src/com/tank/Bullet.java" />
+        <option value="$PROJECT_DIR$/tank/src/com/devil/dp/gamemodel/Audio.java" />
+        <option value="$PROJECT_DIR$/tank/src/com/devil/dp/gamemodel/Explode.java" />
+        <option value="$PROJECT_DIR$/tank/src/com/devil/dp/gamemodel/GameObject.java" />
+        <option value="$PROJECT_DIR$/tank/src/com/devil/dp/gamemodel/Main.java" />
+        <option value="$PROJECT_DIR$/tank/src/com/devil/dp/gamemodel/TestModel.java" />
+        <option value="$PROJECT_DIR$/tank/src/com/devil/dp/gamemodel/Wall.java" />
+        <option value="$PROJECT_DIR$/tank/src/com/devil/dp/gamemodel/observer/TankFireEvent.java" />
+        <option value="$PROJECT_DIR$/tank/src/com/devil/dp/gamemodel/observer/TankFireObserver.java" />
+        <option value="$PROJECT_DIR$/tank/src/com/devil/dp/gamemodel/decorator/RectDecrator.java" />
+        <option value="$PROJECT_DIR$/tank/src/com/devil/dp/gamemodel/decorator/TailDecrator.java" />
+        <option value="$PROJECT_DIR$/tank/src/com/devil/dp/gamemodel/cor/BualletTankCollider.java" />
+        <option value="$PROJECT_DIR$/tank/src/com/devil/dp/gamemodel/cor/Collider.java" />
+        <option value="$PROJECT_DIR$/tank/src/com/devil/dp/gamemodel/cor/ColliderChain.java" />
+        <option value="$PROJECT_DIR$/tank/src/com/devil/dp/gamemodel/cor/BulletTankCollider.java" />
+        <option value="$PROJECT_DIR$/tank/src/com/devil/dp/gamemodel/decorator/GoDecrator.java" />
+        <option value="$PROJECT_DIR$/tank/src/com/devil/dp/gamemodel/decorator/GoDecorator.java" />
+        <option value="$PROJECT_DIR$/tank/src/com/devil/dp/gamemodel/observer/TankFireHandler.java" />
+        <option value="$PROJECT_DIR$/tank/src/com/devil/dp/abstrategy/abstrategyFactory/RectBullet.java" />
+        <option value="$PROJECT_DIR$/tank/src/com/devil/dp/abstrategy/TankFrame.java" />
+        <option value="$PROJECT_DIR$/tank/src/com/devil/dp/abstrategy/abstrategyFactory/DefaultFactory.java" />
+        <option value="$PROJECT_DIR$/tank/src/com/devil/dp/abstrategy/Tank.java" />
+        <option value="$PROJECT_DIR$/tank/src/com/devil/dp/abstrategy/strategy/DefaultFireStrategy.java" />
+        <option value="$PROJECT_DIR$/tank/src/com/devil/dp/abstrategy/strategy/FourDirFireStrategy.java" />
+        <option value="$PROJECT_DIR$/tank/src/com/devil/dp/gamemodel/Bullet.java" />
+        <option value="$PROJECT_DIR$/tank/src/com/devil/dp/abstrategy/strategy/FireStrategy.java" />
+        <option value="$PROJECT_DIR$/tank/src/com/devil/dp/gamemodel/strategy/FireStrategy.java" />
+        <option value="$PROJECT_DIR$/tank/src/com/devil/dp/gamemodel/strategy/DefaultFireStrategy.java" />
+        <option value="$PROJECT_DIR$/tank/src/com/devil/dp/gamemodel/TankFrame.java" />
+        <option value="$PROJECT_DIR$/tank/src/com/devil/dp/gamemodel/Tank.java" />
+        <option value="$PROJECT_DIR$/tank/src/com/devil/dp/gamemodel/strategy/FourDirFireStrategy.java" />
+        <option value="$PROJECT_DIR$/tank/src/com/devil/dp/gamemodel/GameModel.java" />
+        <option value="$PROJECT_DIR$/tank/src/com/devil/dp/gamemodel/cor/TankWallCollider.java" />
+        <option value="$PROJECT_DIR$/tank/src/com/devil/dp/gamemodel/cor/BulletWallCollider.java" />
+        <option value="$PROJECT_DIR$/tank/src/com/devil/dp/gamemodel/cor/TankTankCollider.java" />
       </list>
     </option>
   </component>
@@ -265,6 +313,10 @@
       <expand>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="spring" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
           <item name="tank" type="9519ce18:MavenProjectsStructure$ProjectNode" />
         </path>
       </expand>
@@ -274,11 +326,11 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="29" />
-    <option name="y" value="78" />
-    <option name="width" value="1243" />
-    <option name="height" value="947" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="42" />
+    <option name="y" value="42" />
+    <option name="width" value="1323" />
+    <option name="height" value="937" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
@@ -288,7 +340,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -320,7 +371,26 @@
               <item name="tank" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="dp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tank" type="b2602c69:ProjectViewProjectNode" />
               <item name="tank" type="462c0819:PsiDirectoryNode" />
+              <item name="tank" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="dp" type="462c0819:PsiDirectoryNode" />
+              <item name="gamemodel" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tank" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tank" type="462c0819:PsiDirectoryNode" />
+              <item name="tank" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="dp" type="462c0819:PsiDirectoryNode" />
+              <item name="gamemodel" type="462c0819:PsiDirectoryNode" />
+              <item name="cor" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="tank" type="b2602c69:ProjectViewProjectNode" />
@@ -329,21 +399,12 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="tank" type="462c0819:PsiDirectoryNode" />
-              <item name="abstrategyFactory" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tank" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tank" type="462c0819:PsiDirectoryNode" />
-              <item name="tank" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="tank" type="462c0819:PsiDirectoryNode" />
-              <item name="strategy" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="AndroidView" />
     </panes>
@@ -352,20 +413,29 @@
     <property name="SearchEverywhereHistoryKey" value="collideWith&#9;PSI&#9;JAVA://com.devil.tank.abstrategyFactory.BaseBullet#collideWith&#10;Bullet&#9;PSI&#9;JAVA://com.devil.tank.abstrategyFactory.RectBullet&#10;emenies&#9;null&#9;null&#10;enemy&#9;PSI&#9;JAVA://com.sun.javafx.robot.impl.BaseFXRobot#sceneMouseY&#10;createExplode&#9;PSI&#9;JAVA://com.devil.tank.abstrategyFactory.GameFactory#createExplode&#10;living&#9;PSI&#9;JAVA://com.devil.tank.Tank#living&#10;fire&#9;PSI&#9;JAVA://com.devil.tank.Tank#fire&#10;Resour&#9;PSI&#9;JAVA://com.hanyanjiao.tank.ResourceMgr&#10;enemies&#9;PSI&#9;JAVA://com.devil.tank.TankFrame#enemies&#10;mashibing&#9;null&#9;null" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../DesignPatterns" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.14746094" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\workspace\tank\tank\src\com\devil\tank\abstrategyFactory" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\workspace\tank\tank\src\com\devil\dp\gamemodel" />
+      <recent name="C:\workspace\tank\tank\src\com" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.devil.tank.strategy" />
       <recent name="com.devil.tank" />
     </key>
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.devil.dp.gamemodel.cor" />
+      <recent name="com.devil.dp.gamemodel.observer" />
       <recent name="com.devil.tank.abstrategyFactory" />
     </key>
   </component>
@@ -381,7 +451,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Test">
+  <component name="RunManager" selected="Application.TestModel">
     <configuration name="PropertyMgr" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.devil.tank.PropertyMgr" />
       <module name="tank" />
@@ -393,6 +463,17 @@
         </pattern>
       </extension>
     </configuration>
+    <configuration name="Test (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.devilhan.Test" />
+      <module name="spring" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.devilhan.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
     <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.devil.tank.Test" />
       <module name="tank" />
@@ -400,6 +481,17 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.devil.tank.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
+    <configuration name="TestModel" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.devil.dp.gamemodel.TestModel" />
+      <module name="tank" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.devil.dp.gamemodel.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -472,10 +564,14 @@
       <item itemvalue="Application.Test" />
       <item itemvalue="JUnit.ImageTest.test" />
       <item itemvalue="Application.PropertyMgr" />
+      <item itemvalue="Application.Test (1)" />
+      <item itemvalue="Application.TestModel" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TestModel" />
         <item itemvalue="Application.Test" />
+        <item itemvalue="Application.Test (1)" />
         <item itemvalue="Application.PropertyMgr" />
         <item itemvalue="JUnit.ImageTest.test" />
       </list>
@@ -494,7 +590,8 @@
       <workItem from="1600668599552" duration="13578000" />
       <workItem from="1600739394224" duration="15105000" />
       <workItem from="1600827246006" duration="35762000" />
-      <workItem from="1601005179408" duration="16309000" />
+      <workItem from="1601005179408" duration="16821000" />
+      <workItem from="1601171132618" duration="13683000" />
     </task>
     <servers />
   </component>
@@ -510,7 +607,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="80754000" />
+    <option name="totallyTimeSpent" value="94949000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -522,457 +619,453 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
+    <frame x="42" y="42" width="1323" height="937" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="PlantUML" order="3" />
       <window_info anchor="right" id="Palette" order="10" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.4010554" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.32368702" />
-      <window_info anchor="right" id="Palette&#9;" order="8" />
-      <window_info id="Image Layers" order="6" />
-      <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50075644" side_tool="true" weight="0.26781002" />
-      <window_info anchor="right" id="Maven Projects" order="6" weight="0.10714286" />
-      <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="10" weight="0.32876712" />
-      <window_info anchor="right" id="leetcode" order="5" side_tool="true" weight="0.19884963" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49924356" visible="true" weight="0.20578778" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.3402204" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50075644" side_tool="true" weight="0.26781002" />
+      <window_info anchor="right" id="Maven Projects" order="6" weight="0.12044374" />
+      <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15573333" />
-      <window_info anchor="right" id="Database" order="7" />
+      <window_info anchor="right" id="Database" order="7" weight="0.3296355" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="3" />
+      <window_info anchor="bottom" id="Debug" order="4" weight="0.3988183" />
+      <window_info anchor="bottom" id="TODO" order="7" weight="0.4010554" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.32170543" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+      <window_info id="Image Layers" order="6" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="bottom" id="Version Control" order="11" weight="0.33638743" />
+      <window_info anchor="right" id="leetcode" order="5" side_tool="true" weight="0.19884963" />
+      <window_info active="true" anchor="bottom" id="Run" order="3" sideWeight="0.49924356" visible="true" weight="0.18604651" />
+      <window_info anchor="bottom" id="Spring" order="0" weight="0.32945737" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.39793283" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23375595" />
+      <window_info anchor="bottom" id="Find" order="2" weight="0.32945737" />
       <window_info anchor="right" id="Theme Preview" order="9" />
       <window_info id="Favorites" order="4" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3988183" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3298153" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/tank/src/com/devil/tank/Test.java</url>
-          <line>12</line>
-          <properties class="com.devil.tank.Test" method="main">
-            <option name="EMULATED" value="true" />
-          </properties>
-        </line-breakpoint>
-      </breakpoints>
       <option name="time" value="1" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/tank/src/test/TankDirChangedMsgCodecTest.java">
+    <entry file="file://$PROJECT_DIR$/tank/src/com/devil/dp/gamemodel/net/MsgEncoder.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tank/src/com/devil/dp/gamemodel/net/TankJoinMsg.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tank/src/com/devil/dp/gamemodel/ResourceMgr.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tank/src/com/devil/dp/gamemodel/net/Client.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tank/src/com/devil/dp/gamemodel/Audio.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1078">
-          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+        <state relative-caret-position="156">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tank/src/test/TankJoinMsgCodecTest.java">
+    <entry file="file://$PROJECT_DIR$/tank/src/com/devil/dp/gamemodel/Wall.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-572">
-          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+        <state relative-caret-position="264">
+          <caret line="15" column="19" lean-forward="true" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
+          <folding>
+            <element signature="e#567#568#0" expanded="true" />
+            <element signature="e#591#592#0" expanded="true" />
+            <element signature="e#635#636#0" expanded="true" />
+            <element signature="e#659#660#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tank/src/test/TankStartMovingMsgCodecTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1136">
-          <caret line="13" column="32" lean-forward="true" selection-start-line="13" selection-start-column="32" selection-end-line="13" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tank/src/test/ImageRotateTest.java">
+    <entry file="file://$PROJECT_DIR$/tank/src/com/devil/dp/gamemodel/decorator/RectDecorator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="154">
-          <caret line="13" selection-start-line="13" selection-end-line="13" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="503">
-          <caret line="53" column="28" selection-start-line="53" selection-start-column="28" selection-end-line="53" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_251/src.zip!/java/awt/Component.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="142">
-          <caret line="3309" column="16" selection-start-line="3309" selection-start-column="16" selection-end-line="3309" selection-end-column="16" />
+          <caret line="10" column="31" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
           <folding>
-            <element signature="e#114480#114481#0" expanded="true" />
-            <element signature="e#114527#114528#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#243#244#0" expanded="true" />
+            <element signature="e#268#269#0" expanded="true" />
+            <element signature="e#617#618#0" expanded="true" />
+            <element signature="e#659#660#0" expanded="true" />
+            <element signature="e#703#704#0" expanded="true" />
+            <element signature="e#746#747#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tank/src/images/bulletD.gif">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tank/src/test/ImageTest.java">
+    <entry file="file://$PROJECT_DIR$/tank/src/com/devil/dp/gamemodel/decorator/TailDecorator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="24" column="33" selection-start-line="24" selection-start-column="33" selection-end-line="24" selection-end-column="33" />
+        <state relative-caret-position="792">
+          <caret line="39" selection-start-line="39" selection-end-line="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#597#598#0" expanded="true" />
+            <element signature="e#639#640#0" expanded="true" />
+            <element signature="e#683#684#0" expanded="true" />
+            <element signature="e#726#727#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tank/src/com/devil/tank/readme" />
-    <entry file="file://$PROJECT_DIR$/tank/src/com/hanyanjiao/tank/ResourceMgr.java">
+    <entry file="file://$PROJECT_DIR$/tank/src/com/devil/dp/gamemodel/cor/BulletTankCollider.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="748">
-          <caret line="34" column="32" selection-start-line="34" selection-start-column="32" selection-end-line="34" selection-end-column="32" />
+        <state relative-caret-position="264">
+          <caret line="15" column="8" lean-forward="true" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tank/src/com/hanyanjiao/tank/Bullet.java">
+    <entry file="file://$PROJECT_DIR$/tank/src/com/devil/dp/gamemodel/decorator/GoDecorator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1166">
-          <caret line="53" column="40" selection-start-line="53" selection-start-column="40" selection-end-line="53" selection-end-column="40" />
+        <state relative-caret-position="418">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tank/src/com/hanyanjiao/tank/Audio.java">
+    <entry file="file://$PROJECT_DIR$/tank/src/com/devil/dp/gamemodel/observer/TankFireObserver.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="17" selection-start-line="17" selection-end-line="18" />
+        <state relative-caret-position="110">
+          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tank/src/com/hanyanjiao/tank/Explode.java">
+    <entry file="file://$PROJECT_DIR$/tank/src/com/devil/dp/gamemodel/observer/TankFireEvent.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="441">
-          <caret line="32" column="12" selection-start-line="32" selection-start-column="12" selection-end-line="32" selection-end-column="12" />
+        <state relative-caret-position="198">
+          <caret line="13" column="20" lean-forward="true" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tank/src/com/devil/dp/abstrategy/abstrategyFactory/RectBullet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="3" column="24" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tank/src/com/devil/dp/gamemodel/GameObject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="9" column="56" selection-start-line="9" selection-start-column="56" selection-end-line="9" selection-end-column="56" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tank/src/com/hanyanjiao/tank/Group.java">
+    <entry file="file://$PROJECT_DIR$/tank/src/com/devil/dp/abstrategy/abstrategyFactory/DefaultFactory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+        <state relative-caret-position="242">
+          <caret line="16" column="56" selection-start-line="16" selection-start-column="56" selection-end-line="16" selection-end-column="56" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tank/src/com/hanyanjiao/tank/ImageUtil.java">
+    <entry file="file://$PROJECT_DIR$/tank/src/com/devil/dp/abstrategy/TankFrame.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tank/src/com/hanyanjiao/tank/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="47">
-          <caret line="8" column="23" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
+        <state relative-caret-position="-251">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tank/src/com/hanyanjiao/tank/PropertyMgr.java">
+    <entry file="file://$PROJECT_DIR$/tank/src/com/devil/dp/abstrategy/abstrategyFactory/readme">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="14" column="5" lean-forward="true" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
+        <state relative-caret-position="132">
+          <caret line="6" column="10" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tank/src/com/devil/dp/abstrategy/abstrategyFactory/RectTank.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="20" column="33" lean-forward="true" selection-start-line="20" selection-start-column="33" selection-end-line="20" selection-end-column="33" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tank/src/com/hanyanjiao/tank/TankFrame.java">
+    <entry file="file://$PROJECT_DIR$/tank/src/com/devil/dp/abstrategy/abstrategyFactory/BaseTank.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="441">
-          <caret line="211" column="41" selection-start-line="211" selection-start-column="41" selection-end-line="211" selection-end-column="41" />
+        <state relative-caret-position="299">
+          <caret line="42" column="32" lean-forward="true" selection-start-line="42" selection-start-column="32" selection-end-line="42" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tank/src/com/devil/tank/Fire.java" />
-    <entry file="file://$PROJECT_DIR$/tank/src/com/devil/tank/test/GoodTank.java" />
-    <entry file="file://$PROJECT_DIR$/tank/src/com/hanyanjiao/tank/Tank.java">
+    <entry file="file://$PROJECT_DIR$/tank/src/com/devil/dp/abstrategy/Tank.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="484">
-          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+        <state relative-caret-position="153">
+          <caret line="121" column="32" lean-forward="true" selection-start-line="121" selection-start-column="32" selection-end-line="121" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#3153#3154#0" expanded="true" />
+            <element signature="e#3192#3193#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tank/src/com/devil/tank/test/GoodTank.java" />
-    <entry file="file://$PROJECT_DIR$/tank/src/com/devil/tank/test/BadTank.java" />
-    <entry file="file://$PROJECT_DIR$/tank/src/com/devil/tank/TankFire.java" />
-    <entry file="file://$PROJECT_DIR$/tank/src/com/devil/tank/Group.java">
+    <entry file="file://$PROJECT_DIR$/tank/src/com/devil/dp/gamemodel/net/BulletNewMsg.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="88">
-          <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tank/src/com/devil/tank/ImageUtil.java">
+    <entry file="file://$PROJECT_DIR$/tank/src/com/devil/dp/gamemodel/abstrategyFactory/BaseExplode.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tank/src/com/devil/dp/gamemodel/abstrategyFactory/BaseBullet.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tank/src/com/devil/dp/gamemodel/abstrategyFactory/RectBullet.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tank/src/com/devil/dp/gamemodel/abstrategyFactory/RectTank.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tank/src/com/devil/dp/gamemodel/abstrategyFactory/RectExplode.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tank/src/com/devil/dp/gamemodel/abstrategyFactory/RectFactory.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tank/src/com/devil/dp/gamemodel/abstrategyFactory/readme">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tank/src/com/devil/dp/gamemodel/abstrategyFactory/GameFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tank/src/com/devil/dp/gamemodel/abstrategyFactory/BaseTank.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="16" column="22" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tank/src/com/devil/dp/gamemodel/abstrategyFactory/DefaultFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="287">
+          <caret line="22" column="20" lean-forward="true" selection-start-line="22" selection-start-column="20" selection-end-line="22" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tank/src/com/devil/dp/abstrategy/strategy/FireStrategy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="11" column="1" lean-forward="true" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tank/src/com/devil/dp/gamemodel/strategy/FireStrategy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="8" column="3" lean-forward="true" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tank/src/com/devil/dp/gamemodel/strategy/DefaultFireStrategy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-581">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tank/src/com/devil/dp/gamemodel/TestModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tank/src/com/devil/dp/gamemodel/TankFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="188">
+          <caret line="116" selection-start-line="116" selection-end-line="116" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1151#1152#0" expanded="true" />
+            <element signature="e#1169#1170#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tank/src/com/devil/dp/gamemodel/observer/TankFireHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="12" column="12" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tank/src/com/devil/dp/abstrategy/strategy/DefaultFireStrategy.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="88">
+          <caret line="25" column="29" selection-start-line="25" selection-start-column="29" selection-end-line="25" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tank/src/com/devil/dp/abstrategy/strategy/FourDirFireStrategy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="27" column="47" selection-start-line="27" selection-start-column="42" selection-end-line="27" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tank/src/com/devil/dp/gamemodel/strategy/FourDirFireStrategy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="87">
+          <caret line="13" column="13" lean-forward="true" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tank/src/com/devil/dp/gamemodel/Explode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-380">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tank/src/com/devil/dp/gamemodel/cor/Collider.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="8" column="16" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tank/src/com/devil/dp/gamemodel/Bullet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-504">
           <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tank/src/com/devil/tank/PropertyMgr.java">
+    <entry file="file://$PROJECT_DIR$/tank/src/com/devil/dp/gamemodel/Tank.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="12" column="27" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="27" />
+        <state relative-caret-position="1364">
+          <caret line="62" column="32" selection-start-line="62" selection-start-column="32" selection-end-line="62" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1781#1782#0" expanded="true" />
+            <element signature="e#1801#1802#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tank/src/com/devil/dp/gamemodel/GameModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="178">
+          <caret line="43" column="17" selection-start-line="43" selection-start-column="17" selection-end-line="43" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tank/src/com/devil/tank/Audio.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1892">
-          <caret line="87" column="7" selection-start-line="87" selection-start-column="7" selection-end-line="87" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tank/src/com/devil/tank/Dir.java">
+    <entry file="file://$PROJECT_DIR$/tank/src/com/devil/dp/gamemodel/Dir.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="44">
           <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tank/src/com/devil/tank/ResourceMgr.java">
+    <entry file="file://$PROJECT_DIR$/tank/src/com/devil/dp/gamemodel/cor/ColliderChain.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        <state relative-caret-position="258">
+          <caret line="19" column="36" lean-forward="true" selection-start-line="19" selection-start-column="36" selection-end-line="19" selection-end-column="36" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="docComment;class#ResourceMgr#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_251/javafx-src.zip!/com/sun/javafx/robot/impl/BaseFXRobot.java">
+    <entry file="file://$PROJECT_DIR$/tank/src/com/devil/dp/gamemodel/cor/BulletTankCollider.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="96" column="19" selection-start-line="96" selection-start-column="19" selection-end-line="96" selection-end-column="19" />
+        <state relative-caret-position="374">
+          <caret line="29" column="13" selection-start-line="22" selection-start-column="42" selection-end-line="29" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_251/jre/lib/rt.jar!/sun/awt/RepaintArea.class">
+    <entry file="file://$PROJECT_DIR$/tank/src/com/devil/dp/gamemodel/cor/BulletWallCollider.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="155" selection-start-line="155" selection-end-line="155" />
+        <state relative-caret-position="220">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tank/src/config">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="9" column="9" lean-forward="true" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tank/src/com/devil/tank/Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tank/src/com/devil/tank/abstrategyFactory/DefaultFactory.java">
+    <entry file="file://$PROJECT_DIR$/tank/src/com/devil/dp/gamemodel/cor/TankWallCollider.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="352">
-          <caret line="22" column="33" selection-start-line="22" selection-start-column="30" selection-end-line="22" selection-end-column="33" />
-          <folding>
-            <element signature="e#264#265#0" expanded="true" />
-            <element signature="e#313#314#0" expanded="true" />
-            <element signature="e#395#396#0" expanded="true" />
-            <element signature="e#437#438#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tank/src/com/devil/tank/abstrategyFactory/GameFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="16" column="31" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="31" />
+          <caret line="22" column="9" selection-start-line="14" selection-start-column="53" selection-end-line="22" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tank/src/com/devil/tank/strategy/FourDirFireStrategy.java">
+    <entry file="file://$PROJECT_DIR$/tank/src/com/devil/dp/gamemodel/cor/TankTankCollider.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="520">
-          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tank/src/com/devil/tank/abstrategyFactory/BaseTank.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="40" column="24" selection-start-line="40" selection-start-column="24" selection-end-line="40" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tank/src/com/devil/tank/strategy/FireStrategy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="10" column="9" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tank/src/com/devil/tank/strategy/DefaultFireStrategy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="372">
-          <caret line="52" lean-forward="true" selection-start-line="52" selection-end-line="52" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tank/src/com/devil/tank/Tank.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="121" column="32" lean-forward="true" selection-start-line="121" selection-start-column="32" selection-end-line="121" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#3108#3109#0" expanded="true" />
-            <element signature="e#3137#3138#0" expanded="true" />
-            <element signature="e#3651#3652#0" expanded="true" />
-            <element signature="e#3679#3680#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tank/src/com/devil/tank/abstrategyFactory/RectTank.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="886">
-          <caret line="82" column="22" lean-forward="true" selection-start-line="82" selection-start-column="22" selection-end-line="82" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tank/src/com/devil/tank/abstrategyFactory/RectFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="18" column="23" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#460#461#0" expanded="true" />
-            <element signature="e#506#507#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tank/src/com/devil/tank/abstrategyFactory/BaseBullet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_251/src.zip!/java/util/List.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="237" column="12" selection-start-line="237" selection-start-column="12" selection-end-line="237" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tank/src/com/devil/tank/abstrategyFactory/RectBullet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="427">
-          <caret line="88" column="22" selection-start-line="88" selection-start-column="22" selection-end-line="88" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tank/src/com/devil/tank/abstrategyFactory/BaseExplode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="9" column="25" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tank/src/com/devil/tank/TankFrame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="25" column="32" lean-forward="true" selection-start-line="25" selection-start-column="32" selection-end-line="25" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tank/src/com/devil/tank/Bullet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1254">
-          <caret line="99" column="26" lean-forward="true" selection-start-line="99" selection-start-column="26" selection-end-line="99" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="docComment;class#Bullet#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tank/src/com/devil/tank/Explode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="33" selection-start-line="33" selection-end-line="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tank/src/com/devil/tank/abstrategyFactory/RectExplode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="36" column="33" selection-start-line="36" selection-start-column="33" selection-end-line="36" selection-end-column="33" />
+        <state relative-caret-position="308">
+          <caret line="29" column="29" lean-forward="true" selection-start-line="29" selection-start-column="29" selection-end-line="29" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -996,7 +1089,7 @@
       </state>
       <state key="FacetStructureConfigurable.UI">
         <settings>
-          <last-edited>No facets are configured</last-edited>
+          <last-edited>Spring</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -1037,6 +1130,7 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>
