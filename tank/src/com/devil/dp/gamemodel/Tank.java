@@ -126,11 +126,11 @@ public class Tank extends GameObject {
 			return;
 
 		switch (dir) {
-			case LEFT:
-				x -= SPEED;
-				break;
 			case UP:
 				y -= SPEED;
+				break;
+			case LEFT:
+				x -= SPEED;
 				break;
 			case RIGHT:
 				x += SPEED;
@@ -158,11 +158,11 @@ public class Tank extends GameObject {
 			GameModel.getInstance().remove(this);
 
 		switch (dir) {
-			case LEFT:
-				g.drawImage(this.group == Group.GOOD ? ResourceMgr.goodTankL : ResourceMgr.badTankL, x, y, null);
-				break;
 			case UP:
 				g.drawImage(this.group == Group.GOOD ? ResourceMgr.goodTankU : ResourceMgr.badTankU, x, y, null);
+				break;
+			case LEFT:
+				g.drawImage(this.group == Group.GOOD ? ResourceMgr.goodTankL : ResourceMgr.badTankL, x, y, null);
 				break;
 			case RIGHT:
 				g.drawImage(this.group == Group.GOOD ? ResourceMgr.goodTankR : ResourceMgr.badTankR, x, y, null);

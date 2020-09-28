@@ -13,6 +13,7 @@ import java.util.List;
  */
 public class GameModel {
 
+    //饿汉式单例模式
     private static final GameModel INSTANCE = new GameModel();
 
     static {

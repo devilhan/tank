@@ -1,7 +1,9 @@
 package com.devil.dp.gamemodel.strategy;
 
 import com.devil.dp.gamemodel.Bullet;
+import com.devil.dp.gamemodel.GameModel;
 import com.devil.dp.gamemodel.Tank;
+import com.devil.dp.gamemodel.decorator.RectDecorator;
 
 /**
  * @author Hanyanjiao
@@ -46,7 +48,8 @@ public class DefaultFireStrategy implements FireStrategy {
                 break;
         }
 
-        new Bullet(bx,by,t.getDir(),t.getGroup());
+//        new Bullet(bx,by,t.getDir(),t.getGroup());
+        GameModel.getInstance().add(new RectDecorator(new Bullet(bx,by,t.getDir(),t.getGroup())));
     }
 
 }
